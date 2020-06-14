@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import Loader from "../components/Loader";
-import {detailProduct} from "../actions/productAction"
+import Loader from "../../components/Loader";
+import {detailProduct} from "../../actions/productAction"
 
-const Product = () => {
+const Detail = () => {
   const { id } = useParams();
   const [product, setProduct] = useState({
     loading: false,
@@ -54,4 +54,4 @@ const Product = () => {
   )
 };
 
-export default Product;
+export default Detail;

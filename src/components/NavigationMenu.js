@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 function NavigationMenu(props) {
   const [menus] = useState([
     { name: "Home", link: "/" },
+    { name: "Todo", link: "/todo"},
+    { name: "Product", link: "/product"},
     { name: "About", link: "/about" },
   ]);
   return (
