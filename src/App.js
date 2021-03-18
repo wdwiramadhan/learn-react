@@ -1,12 +1,12 @@
 import React from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Home from "./views/Home";
-import Product from "./views/Product/Product";
-import DetailProduct from "./views/Product/Detail";
-import Todo from "./views/Todo/Todo";
-import CreateTodo from "./views/Todo/Create";
-import About from "./views/About";
+import Home from "./pages/Home";
+import Product from "./pages/Product/Product";
+import DetailProduct from "./pages/Product/Detail";
+import Todo from "./pages/Todo/Todo";
+import CreateTodo from "./pages/Todo/Create";
+import About from "./pages/About";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {

@@ -1,19 +1,16 @@
 import Axios from "../api";
 
-const getAll = async() => {
-  return await Axios.get("/todos");
-}
+const getTodos = async () => {
+  const todos = await Axios.get("/todos");
+  return todos;
+};
 
-const store = async() => {
-  return await Axios.post("/todos");
-}
-
-const remove = () => {
-
-}
+const store = async () => {
+  const todo = await Axios.post("/todos");
+  return todo;
+};
 
 export default {
-  getAll,
+  getTodos,
   store,
-  remove
-}
+};
